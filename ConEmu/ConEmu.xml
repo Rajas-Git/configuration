@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
   <key name="ConEmu">
-    <key name=".Vanilla" modified="2017-07-30 23:30:26" build="161206">
+    <key name=".Vanilla" modified="2017-08-13 22:59:02" build="161206">
       <value name="StartType" type="hex" data="03"/>
       <value name="CmdLine" type="string" data=""/>
       <value name="StartTasksFile" type="string" data=""/>
@@ -59,7 +59,7 @@
       <value name="FontSize" type="ulong" data="14"/>
       <value name="StatusFontHeight" type="long" data="12"/>
       <value name="TabFontHeight" type="long" data="16"/>
-      <key name="HotKeys" modified="2017-07-30 23:15:02" build="161206">
+      <key name="HotKeys" modified="2017-07-31 15:00:24" build="161206">
         <value name="MinimizeRestore" type="dword" data="000011c0"/>
         <value name="KeyMacroVersion" type="hex" data="02"/>
         <value name="Multi.Modifier" type="dword" data="0000005b"/>
@@ -251,7 +251,7 @@
       <value name="WindowMode" type="dword" data="00000520"/>
       <value name="ConWnd X" type="long" data="-3"/>
       <value name="ConWnd Y" type="long" data="-3"/>
-      <value name="LastMonitor" type="string" data="0,0,2560,1370"/>
+      <value name="LastMonitor" type="string" data="0,0,3000,1920"/>
       <value name="ConWnd Width" type="dword" data="000000b5"/>
       <value name="ConWnd Height" type="dword" data="0000002a"/>
       <value name="16bit Height" type="ulong" data="0"/>
@@ -305,6 +305,14 @@
       <value name="JumpListAutoUpdate" type="hex" data="01"/>
       <value name="SaveCmdHistory" type="hex" data="01"/>
       <value name="CmdLineHistory" type="multi">
+				<line data="{VS17 Dev Cmd Prompt}"/>
+				<line data="{Shells::PowerShell (Admin)}"/>
+				<line data="{Shells::PowerShell}"/>
+				<line data="{Bash::Git bash}"/>
+				<line data="{Razzle}"/>
+				<line data="{Node Prompt}"/>
+				<line data="{Shells::cmd}"/>
+				<line data="{Powershell+GitBash}"/>
 			</value>
       <value name="ShowHelpTooltips" type="hex" data="01"/>
       <value name="Multi" type="hex" data="01"/>
@@ -586,9 +594,9 @@
       <value name="Update.DownloadPath" type="string" data="%TEMP%\ConEmu"/>
       <value name="Update.LeavePackages" type="hex" data="00"/>
       <value name="Update.PostUpdateCmd" type="string" data="echo Last successful update&gt;ConEmuUpdate.info &amp;&amp; date /t&gt;&gt;ConEmuUpdate.info &amp;&amp; time /t&gt;&gt;ConEmuUpdate.info"/>
-      <key name="Tasks" modified="2017-07-30 23:28:17" build="161206">
-        <value name="Count" type="long" data="16"/>
-        <key name="Task1" modified="2017-07-30 23:28:17" build="161206">
+      <key name="Tasks" modified="2017-07-31 15:00:24" build="161206">
+        <value name="Count" type="long" data="17"/>
+        <key name="Task1" modified="2017-07-31 15:00:24" build="161206">
           <value name="Name" type="string" data="{Shells::cmd}"/>
           <value name="Flags" type="dword" data="00000000"/>
           <value name="Hotkey" type="dword" data="00000000"/>
@@ -597,7 +605,7 @@
           <value name="Active" type="long" data="0"/>
           <value name="Count" type="long" data="1"/>
         </key>
-        <key name="Task2" modified="2017-07-30 23:28:17" build="161206">
+        <key name="Task2" modified="2017-07-31 15:00:24" build="161206">
           <value name="Name" type="string" data="{Shells::PowerShell}"/>
           <value name="Flags" type="dword" data="00000001"/>
           <value name="Hotkey" type="dword" data="00000000"/>
@@ -606,7 +614,7 @@
           <value name="Active" type="long" data="0"/>
           <value name="Count" type="long" data="1"/>
         </key>
-        <key name="Task3" modified="2017-07-30 23:28:17" build="161206">
+        <key name="Task3" modified="2017-07-31 15:00:24" build="161206">
           <value name="Name" type="string" data="{Bash::Git bash}"/>
           <value name="Flags" type="dword" data="00000000"/>
           <value name="Hotkey" type="dword" data="00000000"/>
@@ -615,7 +623,7 @@
           <value name="Active" type="long" data="0"/>
           <value name="Count" type="long" data="1"/>
         </key>
-        <key name="Task4" modified="2017-07-30 23:28:17" build="161206">
+        <key name="Task4" modified="2017-07-31 15:00:24" build="161206">
           <value name="Name" type="string" data="{Node Prompt}"/>
           <value name="Flags" type="dword" data="00000000"/>
           <value name="Hotkey" type="dword" data="00000000"/>
@@ -625,7 +633,7 @@
           <value name="Active" type="long" data="0"/>
           <value name="Count" type="long" data="1"/>
         </key>
-        <key name="Task5" modified="2017-07-30 23:28:17" build="161206">
+        <key name="Task5" modified="2017-07-31 15:00:24" build="161206">
           <value name="Name" type="string" data="{Powershell+GitBash}"/>
           <value name="Flags" type="dword" data="00000000"/>
           <value name="Hotkey" type="dword" data="00000000"/>
@@ -635,7 +643,7 @@
           <value name="Count" type="long" data="2"/>
         	<value name="Cmd2" type="string" data="&quot;%ConEmuDir%\..\Git\git-cmd.exe&quot; --no-cd --command=usr/bin/bash.exe -l -i -new_console:s50V"/>
 				</key>
-        <key name="Task6" modified="2017-07-30 23:28:17" build="161206">
+        <key name="Task6" modified="2017-07-31 15:00:24" build="161206">
           <value name="Name" type="string" data="{Shells::cmd (Admin)}"/>
           <value name="Flags" type="dword" data="00000004"/>
           <value name="Hotkey" type="dword" data="00000000"/>
@@ -645,7 +653,7 @@
           <value name="Count" type="long" data="1"/>
         	<value name="Cmd2" type="string" data="&quot;%ConEmuDir%\..\Git\git-cmd.exe&quot; --no-cd --command=usr/bin/bash.exe -l -i -new_console:s50V"/>
 				</key>
-        <key name="Task7" modified="2017-07-30 23:28:17" build="161206">
+        <key name="Task7" modified="2017-07-31 15:00:24" build="161206">
           <value name="Name" type="string" data="{Shells::cmd-32}"/>
           <value name="Flags" type="dword" data="00000004"/>
           <value name="Hotkey" type="dword" data="00000000"/>
@@ -654,7 +662,7 @@
           <value name="Active" type="long" data="0"/>
           <value name="Count" type="long" data="1"/>
         </key>
-        <key name="Task8" modified="2017-07-30 23:28:17" build="161206">
+        <key name="Task8" modified="2017-07-31 15:00:24" build="161206">
           <value name="Name" type="string" data="{Shells::cmd 64/32}"/>
           <value name="Flags" type="dword" data="00000004"/>
           <value name="Hotkey" type="dword" data="00000000"/>
@@ -664,7 +672,7 @@
           <value name="Count" type="long" data="2"/>
         	<value name="Cmd2" type="string" data="&quot;%windir%\syswow64\cmd.exe&quot; /k &quot;&quot;%ConEmuBaseDir%\CmdInit.cmd&quot; &amp; echo This is 32 bit cmd.exe -new_console:s50V&quot;"/>
 				</key>
-        <key name="Task9" modified="2017-07-30 23:28:17" build="161206">
+        <key name="Task9" modified="2017-07-31 15:00:24" build="161206">
           <value name="Name" type="string" data="{Shells::PowerShell (Admin)}"/>
           <value name="Flags" type="dword" data="00000004"/>
           <value name="Hotkey" type="dword" data="00000000"/>
@@ -674,7 +682,7 @@
           <value name="Count" type="long" data="1"/>
         	<value name="Cmd2" type="string" data="&quot;%windir%\syswow64\cmd.exe&quot; /k &quot;&quot;%ConEmuBaseDir%\CmdInit.cmd&quot; &amp; echo This is 32 bit cmd.exe -new_console:s50V&quot;"/>
 				</key>
-        <key name="Task10" modified="2017-07-30 23:28:17" build="161206">
+        <key name="Task10" modified="2017-07-31 15:00:24" build="161206">
           <value name="Name" type="string" data="{Bash::bash}"/>
           <value name="Flags" type="dword" data="00000004"/>
           <value name="Hotkey" type="dword" data="00000000"/>
@@ -683,7 +691,7 @@
           <value name="Active" type="long" data="0"/>
           <value name="Count" type="long" data="0"/>
         </key>
-        <key name="Task11" modified="2017-07-30 23:28:17" build="161206">
+        <key name="Task11" modified="2017-07-31 15:00:24" build="161206">
           <value name="Name" type="string" data="{Helper::Show ANSI colors}"/>
           <value name="Flags" type="dword" data="00000004"/>
           <value name="Hotkey" type="dword" data="00000000"/>
@@ -692,7 +700,7 @@
           <value name="Active" type="long" data="0"/>
           <value name="Count" type="long" data="1"/>
         </key>
-        <key name="Task12" modified="2017-07-30 23:28:17" build="161206">
+        <key name="Task12" modified="2017-07-31 15:00:24" build="161206">
           <value name="Name" type="string" data="{SDK::VS 11.0 x86 tools prompt}"/>
           <value name="Flags" type="dword" data="00000004"/>
           <value name="Hotkey" type="dword" data="00000000"/>
@@ -701,7 +709,7 @@
           <value name="Active" type="long" data="0"/>
           <value name="Count" type="long" data="1"/>
         </key>
-        <key name="Task13" modified="2017-07-30 23:28:17" build="161206">
+        <key name="Task13" modified="2017-07-31 15:00:24" build="161206">
           <value name="Name" type="string" data="{SDK::VS 12.0 x86 tools prompt}"/>
           <value name="Flags" type="dword" data="00000004"/>
           <value name="Hotkey" type="dword" data="00000000"/>
@@ -710,7 +718,7 @@
           <value name="Active" type="long" data="0"/>
           <value name="Count" type="long" data="1"/>
         </key>
-      				<key name="Task14" modified="2017-07-30 23:28:17" build="161206">
+      				<key name="Task14" modified="2017-07-31 15:00:24" build="161206">
 					<value name="Name" type="string" data="{SDK::VS 14.0 x86 tools prompt}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -719,16 +727,20 @@
 					<value name="Count" type="long" data="1"/>
 					<value name="Cmd1" type="string" data="cmd /k &quot;&quot;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat&quot;&quot; x86 -new_console:t:&quot;VS 14.0&quot; -new_console:C:&quot;%CommonProgramFiles(x86)%\microsoft shared\MSEnv\VSFileHandler.dll,33&quot;"/>
 				</key>
-				<key name="&lt;Startup&gt;" modified="2017-07-30 23:30:01" build="161206">
+				<key name="&lt;Startup&gt;" modified="2017-08-13 23:06:52" build="161206">
 					<value name="GuiArgs" type="string" data=""/>
 					<value name="Cmd1" type="string" data="&gt; -cur_console:f -cur_console:d:C:\Users\radhoble powershell.exe"/>
-					<value name="Cmd2" type="string" data="-cur_console:b -cur_console:d:C:\Users\radhoble -cur_console:t:Node C:\Windows\System32\cmd.exe /k RenameTab &quot;Node&quot; &amp; &quot;C:\Program Files\nodejs\nodevars.bat&quot;"/>
-					<value name="Cmd3" type="string" data="-cur_console:ns1T50V -cur_console:d:F:\Hackathon\hack2017teams3d\DataService -cur_console:t:Node &quot;C:\Windows\System32\cmd.exe&quot;  /k RenameTab &quot;Node&quot; &amp; &quot;C:\Program Files\nodejs\nodevars.bat&quot;"/>
+					<value name="Cmd2" type="string" data="-cur_console:bs1T50V -cur_console:d:C:\Users\radhoble &quot;%ConEmuDir%\..\Git\git-cmd.exe&quot; --no-cd --command=usr/bin/bash.exe -l -i"/>
+					<value name="Cmd3" type="string" data="-cur_console:f -cur_console:d:C:\Users\radhoble powershell.exe"/>
 					<value name="Active" type="long" data="1"/>
-					<value name="Count" type="long" data="1"/>
-					<value name="Cmd4" type="string" data="&gt; -cur_console:d:C:\Users\radhoble powershell.exe"/>
+					<value name="Count" type="long" data="5"/>
+					<value name="Cmd4" type="string" data="-cur_console:b -cur_console:d:C:\Users\radhoble &quot;%ConEmuDir%\..\Git\git-cmd.exe&quot; --no-cd --command=usr/bin/bash.exe -l -i"/>
+					<value name="Cmd5" type="string" data="-cur_console:b -cur_console:d:C:\Users\radhoble -cur_console:t:&quot;VS2017 Dev Cmd Prompt&quot; %comspec% /k RenameTab &quot;VS2017 Dev Cmd Prompt&quot; &amp; &quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\Tools\VsDevCmd.bat&quot;"/>
+					<value name="Cmd6" type="string" data="-cur_console:d:C:\Users\radhoble &quot;%ConEmuDir%\..\Git\git-cmd.exe&quot; --no-cd --command=usr/bin/bash.exe -l -i"/>
+					<value name="Cmd7" type="string" data="-cur_console:d:C:\Users\radhoble &quot;%ConEmuDir%\..\Git\git-cmd.exe&quot; --no-cd --command=usr/bin/bash.exe -l -i"/>
+					<value name="Cmd8" type="string" data="&gt; -cur_console:d:C:\Users\radhoble cmd.exe /k &quot;%ConEmuBaseDir%\CmdInit.cmd&quot;"/>
 				</key>
-				<key name="Task15" modified="2017-07-30 23:29:58" build="161206">
+				<key name="Task15" modified="2017-07-31 15:00:24" build="161206">
 					<value name="Name" type="string" data="{VS17 Dev Cmd Prompt}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -738,7 +750,7 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="Task16" modified="2017-07-30 23:29:58" build="161206">
+				<key name="Task16" modified="2017-07-31 15:00:24" build="161206">
 					<value name="Name" type="string" data="{Tools::Chocolatey (Admin)}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
@@ -747,11 +759,20 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
+				<key name="Task17" modified="2017-07-31 15:06:56" build="161206">
+					<value name="Name" type="string" data="{Razzle}"/>
+					<value name="Flags" type="dword" data="00000004"/>
+					<value name="Hotkey" type="dword" data="00000000"/>
+					<value name="GuiArgs" type="string" data=""/>
+					<value name="Cmd1" type="string" data="* %windir%\System32\cmd.exe /k RenameTab &quot;Razzle&quot; &amp; G:\lcsSource_SD\tools\lcsrazzle.cmd /Branch:lcsdata_vnext /Bin:E:\build\bin /Flavor:checked /StartIn:. /Objects:E:\build\obj /Architecture:amd64 /Source:data_vnext /NoOacr"/>
+					<value name="Active" type="long" data="0"/>
+					<value name="Count" type="long" data="1"/>
+				</key>
 			</key>
-      <key name="Apps" modified="2017-07-30 23:29:58" build="161206">
+      <key name="Apps" modified="2017-07-31 15:06:56" build="161206">
         <value name="Count" type="long" data="0"/>
       </key>
-      <key name="Colors" modified="2017-07-30 23:29:58" build="161206">
+      <key name="Colors" modified="2017-07-31 15:06:56" build="161206">
         <value name="Count" type="long" data="0"/>
         <key name="Palette1" modified="2016-04-16 18:37:50" build="160329">
           <value name="Name" type="string" data="Oceans16 Dark"/>
